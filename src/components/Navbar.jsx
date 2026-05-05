@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { CalendarDays, Menu, UserRound } from 'lucide-react';
+import { CalendarDays, Menu, Phone, UserRound } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../hooks/useAuth.jsx';
 
@@ -20,6 +20,10 @@ export default function Navbar() {
 
   return (
     <header className="site-header">
+      <div className="top-ribbon">
+        <span>Fayetteville, OH</span>
+        <a href="tel:+15135550124"><Phone size={14} /> (513) 555-0124</a>
+      </div>
       <div className="nav-shell">
         <Link className="brand" to="/">Lillyan's Beauty Studio</Link>
         <button className="icon-button mobile-only" onClick={() => setOpen((value) => !value)} aria-label="Open menu">

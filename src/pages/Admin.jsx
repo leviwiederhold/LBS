@@ -37,7 +37,8 @@ export default function Admin() {
         <h1>Edit business hours.</h1>
         <p>Mobile-friendly controls persist hours to Supabase.</p>
       </div>
-      <section className="admin-hours">
+      <section className="card admin-card">
+        <div className="admin-hours">
         {hours.map((row, index) => (
           <div className="hours-row" key={row.day}>
             <strong>{row.day}</strong>
@@ -49,6 +50,7 @@ export default function Admin() {
             <input type="time" value={row.close_time?.slice(0, 5)} disabled={row.is_closed} onChange={(event) => update(index, 'close_time', event.target.value)} />
           </div>
         ))}
+        </div>
       </section>
       <button className="button primary" onClick={save}>Save Hours</button>
       {message && <p className="status-message">{message}</p>}

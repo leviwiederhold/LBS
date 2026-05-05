@@ -28,7 +28,7 @@ export default function BookingForm() {
   return (
     <form className="booking-flow" onSubmit={handleConfirm}>
       <section className="booking-step">
-        <p className="step-label">1. Select service</p>
+        <p className="step-label"><span>1</span> Select service</p>
         <div className="choice-grid">
           {booking.services.map((service) => (
             <button
@@ -45,12 +45,12 @@ export default function BookingForm() {
       </section>
 
       <section className="booking-step">
-        <p className="step-label">2. Intake form</p>
+        <p className="step-label"><span>2</span> Intake form</p>
         <IntakeForm value={booking.intake} onChange={booking.setIntake} serviceName={booking.service?.name} />
       </section>
 
       <section className="booking-step">
-        <p className="step-label">3. Time and deposit</p>
+        <p className="step-label"><span>3</span> Time and deposit</p>
         <label>
           Preferred appointment time
           <input type="datetime-local" min={tomorrow} value={booking.appointmentTime} onChange={(event) => booking.setAppointmentTime(event.target.value)} />

@@ -17,6 +17,7 @@ export default function Contact() {
       <section className="card">
         <h2>Studio</h2>
         <p>Fayetteville, Ohio</p>
+        <p><a className="text-link" href="tel:+15135550124">(513) 555-0124</a></p>
         <p>Hours are managed from the admin panel and stored in Supabase.</p>
       </section>
     </main>

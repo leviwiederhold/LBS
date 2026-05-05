@@ -11,6 +11,7 @@ export default function Home() {
           <p className="eyebrow"><Sparkles size={16} /> Fayetteville, OH · Licensed Esthetician</p>
           <h1>Beauty services designed to help you feel confident.</h1>
           <p>Facials, waxing, permanent makeup, and formal makeup by Lilly in a calm boutique studio.</p>
+          <p className="hero-phone"><a href="tel:+15135550124">(513) 555-0124</a></p>
           <div className="button-row">
             <Link className="button primary" to="/services">Book Online</Link>
             <Link className="button secondary" to="/gallery">View Gallery</Link>

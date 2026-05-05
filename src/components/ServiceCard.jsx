@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 export default function ServiceCard({ service, onSelect }) {
   return (
     <article className="card service-card">
+      <div className="card-icon" aria-hidden="true">✦</div>
       <div>
         <p className="eyebrow">{service.category}</p>
         <h3>{service.name}</h3>
