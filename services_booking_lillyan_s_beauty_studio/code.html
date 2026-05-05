@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services &amp; Booking | Lillyan’s Beauty Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-secondary-container": "#795354",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "surface-variant": "#e4e2e1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#241a00",
+                    "primary-fixed": "#f2dede",
+                    "surface-container": "#f0eded",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fbf9f8",
+                    "tertiary": "#735c00",
+                    "on-primary-fixed-variant": "#514444",
+                    "surface-dim": "#dcd9d9",
+                    "inverse-primary": "#d5c2c2",
+                    "secondary-fixed": "#ffdad9",
+                    "inverse-surface": "#303030",
+                    "on-secondary-fixed": "#2f1314",
+                    "surface": "#fbf9f8",
+                    "surface-container-low": "#f6f3f2",
+                    "tertiary-container": "#ffe397",
+                    "on-background": "#1b1c1c",
+                    "outline": "#807474",
+                    "outline-variant": "#d1c3c3",
+                    "on-primary-container": "#726363",
+                    "on-primary-fixed": "#231919",
+                    "background": "#fbf9f8",
+                    "surface-tint": "#695b5b",
+                    "surface-container-high": "#eae8e7",
+                    "on-primary": "#ffffff",
+                    "primary": "#695b5b",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#ffe088",
+                    "primary-container": "#f5e1e1",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#ecbbba",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#4e4445",
+                    "on-secondary-fixed-variant": "#603d3e",
+                    "secondary-container": "#fdcbcb",
+                    "on-tertiary-container": "#7d6300",
+                    "on-surface": "#1b1c1c",
+                    "primary-fixed-dim": "#d5c2c2",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#7b5455"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "unit": "8px",
+                    "margin-desktop": "48px"
+            },
+            "fontFamily": {
+                    "h3": ["Noto Serif"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "h1": ["Noto Serif"],
+                    "label-sm": ["Be Vietnam Pro"],
+                    "h2": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "h2": ["36px", {"lineHeight": "1.3", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { background-color: #fbf9f8; }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(253, 249, 248, 0) 0%, rgba(245, 225, 225, 0.4) 100%);
+        }
+    </style>
+</head>
+<body class="text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FDF9F8] border-b border-[#F5E1E1] shadow-[0_4px_20px_-5px_rgba(212,165,165,0.1)]">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-8 py-5">
+<div class="text-2xl font-serif italic text-stone-900">Lillyan’s Beauty Studio</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-stone-500 font-medium hover:text-[#D4A5A5] transition-all duration-300" href="#">Home</a>
+<a class="text-stone-500 font-medium hover:text-[#D4A5A5] transition-all duration-300" href="#">About</a>
+<a class="text-stone-950 border-b border-[#D4A5A5] pb-1 font-semibold" href="#">Services</a>
+<a class="text-stone-500 font-medium hover:text-[#D4A5A5] transition-all duration-300" href="#">Care</a>
+<a class="text-stone-500 font-medium hover:text-[#D4A5A5] transition-all duration-300" href="#">Members</a>
+<a class="text-stone-500 font-medium hover:text-[#D4A5A5] transition-all duration-300" href="#">Contact</a>
+</nav>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-sm active:scale-[0.98] transition-transform shadow-sm" href="[INSERT BOOKING LINK]">Book Online</a>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative py-24 md:py-32 overflow-hidden hero-gradient">
+<div class="max-w-[1200px] mx-auto px-8 flex flex-col items-center text-center">
+<span class="font-label-sm text-secondary uppercase tracking-[0.2em] mb-4">Seamless Reservations</span>
+<h1 class="font-h1 text-h1 text-on-surface mb-6 max-w-3xl">The fastest way to glow is just a click away.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">Skip the wait and reserve your personalized treatment instantly. Our online booking system ensures you get the exact time that fits your lifestyle.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-sm shadow-lg hover:bg-on-secondary-fixed-variant transition-colors flex items-center justify-center gap-2" href="[INSERT BOOKING LINK]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+                        Book Online
+                    </a>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-24 max-w-[1200px] mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Facials Section -->
+<div class="md:col-span-8 bg-surface-container-low p-10 rounded-xl border border-outline-variant flex flex-col md:flex-row gap-10">
+<div class="md:w-1/2">
+<span class="font-label-sm text-secondary uppercase mb-2 block">Skincare</span>
+<h2 class="font-h2 text-h2 mb-6">Facials</h2>
+<ul class="space-y-6">
+<li>
+<h4 class="font-h3 text-h3 text-lg">Signature Radiance Facial</h4>
+<p class="text-on-surface-variant">A bespoke treatment tailored to your skin’s unique needs, focusing on deep hydration and cellular renewal.</p>
+</li>
+<li>
+<h4 class="font-h3 text-h3 text-lg">Luminous Oxygen Therapy</h4>
+<p class="text-on-surface-variant">Revitalize tired skin with pure oxygen infusion that plumps and brightens instantly for a red-carpet glow.</p>
+</li>
+<li>
+<h4 class="font-h3 text-h3 text-lg">Detoxifying Pore Refiner</h4>
+<p class="text-on-surface-variant">Targets impurities and congestion with botanical extracts and advanced manual extraction techniques.</p>
+</li>
+</ul>
+</div>
+<div class="md:w-1/2 relative min-h-[300px] rounded-lg overflow-hidden shadow-inner">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A serene close-up of a high-end facial treatment in a minimalist spa setting. Soft morning light filters through a window, illuminating the smooth, creamy texture of a face mask being applied with a professional brush. The color palette is dominated by muted rose, warm cream, and soft browns, creating an atmosphere of luxury and professional skincare care. The mood is calm and restorative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjLUw6XFURoKvTUJ-Mz_aOVwGV_4zABi-appXRhVQUJCPyvqnv0MSyjceMVTidbaC0ApK45MJDaCtQ2edhES-KQe7h_61x8Txug1CWcjYBqs2dWXc6kKDRMIBhay0P2ktmJNuiBI7JSmloJyAGzDJpAcPRlxL4TrvJk8OHOuB_4F4UrLvYPMizLV2xDtvWn7K_dRUtfY0x0jdWbbUwR_Leky3SKUktsgwNDC0FEDWIWWd7LiN1ar-MthQPy730NXa2sQVV6ZPfN3c"/>
+</div>
+</div>
+<!-- Permanent Makeup Section -->
+<div class="md:col-span-4 bg-primary-container p-10 rounded-xl border border-outline-variant text-center flex flex-col items-center">
+<span class="font-label-sm text-on-primary-container uppercase mb-2 block">Precision</span>
+<h2 class="font-h2 text-h2 mb-6">Permanent Makeup</h2>
+<div class="space-y-8 flex-grow">
+<div>
+<h4 class="font-h3 text-h3 text-lg">Microblading Artistry</h4>
+<p class="text-on-primary-container/80 text-sm">Hyper-realistic hair strokes designed to enhance your natural brow shape and density permanently.</p>
+</div>
+<div>
+<h4 class="font-h3 text-h3 text-lg">Powder Ombré Brows</h4>
+<p class="text-on-primary-container/80 text-sm">A soft, misty finish that mimics the look of expertly applied brow powder for effortless mornings.</p>
+</div>
+<div>
+<h4 class="font-h3 text-h3 text-lg">Lip Blush Revitalization</h4>
+<p class="text-on-primary-container/80 text-sm">Subtle pigment infusion to define the lip border and add a natural-looking tint of healthy color.</p>
+</div>
+</div>
+</div>
+<!-- Waxing Section -->
+<div class="md:col-span-4 bg-secondary-container p-10 rounded-xl border border-outline-variant">
+<span class="font-label-sm text-on-secondary-container uppercase mb-2 block">Smoothness</span>
+<h2 class="font-h2 text-h2 mb-6">Waxing</h2>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-secondary-container">check_circle</span>
+<div>
+<h4 class="font-medium">Full Face Definition</h4>
+<p class="text-sm text-on-secondary-container/70">Brows, lip, and chin for a clean canvas.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-secondary-container">check_circle</span>
+<div>
+<h4 class="font-medium">Signature Brow Sculpt</h4>
+<p class="text-sm text-on-secondary-container/70">Expert shaping following your bone structure.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-secondary-container">check_circle</span>
+<div>
+<h4 class="font-medium">Essential Body Waxing</h4>
+<p class="text-sm text-on-secondary-container/70">Legs, arms, and underarms using gentle wax.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Makeup Artistry Section -->
+<div class="md:col-span-8 bg-surface-container-high p-10 rounded-xl border border-outline-variant flex flex-col md:flex-row-reverse gap-10">
+<div class="md:w-1/2">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-sm text-secondary uppercase">Celebration</span>
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Travel Available</span>
+</div>
+<h2 class="font-h2 text-h2 mb-6">Formal &amp; Wedding</h2>
+<p class="mb-8 text-on-surface-variant italic">Wedding Makeup Travel Available – we bring the studio to you on your special day.</p>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<li>
+<h4 class="font-h3 text-h3 text-base">Bridal Elegance</h4>
+<p class="text-xs text-on-surface-variant">Timeless, high-definition makeup designed to last from the first look to the last dance.</p>
+</li>
+<li>
+<h4 class="font-h3 text-h3 text-base">Evening Glamour</h4>
+<p class="text-xs text-on-surface-variant">Sophisticated and bold styles for galas, proms, and red-carpet events.</p>
+</li>
+</ul>
+</div>
+<div class="md:w-1/2 rounded-lg overflow-hidden shadow-lg border-4 border-white">
+<img class="w-full h-full object-cover" data-alt="An elegant flat lay of premium bridal makeup products on a textured cream linen surface. Soft silk ribbons and a delicate gold hairpiece are arranged artfully alongside a palette of neutral and rose gold eyeshadows. The lighting is bright and ethereal, emphasizing the premium quality of the studio's wedding services. The palette is a blend of muted rose and warm ivory, perfectly representing a sophisticated bridal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGUk1yv5FQ2DDhtjEOtdRv1sluO7vgTAG_Va6dSlBrisVy2npsP_cE7CAWPNhcWlx9OFcxwsAmEU86mbUEuVEncK44clGbWyQow_-FDPF3grxCOisSLf93MVOVuhcxpxeeFjPAOrHn3i6Yte-WJUaCssZyZst5J5EosFIuYRJiCmRcNlpGPjGCiuhKh7bSNZb4MQQ1E2aLR0W7BU_I4mR8swGWWjSh8r0a5_D8VwApWng1T7tLSU625OJ7iWqMTAaIvNqJBswHhkE"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="py-24 bg-primary text-on-primary">
+<div class="max-w-[1200px] mx-auto px-8 text-center">
+<h2 class="font-h2 text-h2 mb-8">Ready for your transformation?</h2>
+<p class="font-body-lg text-body-lg mb-10 max-w-xl mx-auto opacity-90">Avoid the back-and-forth of messaging. Secure your preferred time immediately through our digital concierge.</p>
+<a class="inline-flex items-center gap-4 bg-on-primary text-primary px-12 py-5 rounded-full font-label-sm shadow-xl hover:scale-105 transition-transform" href="[INSERT BOOKING LINK]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+                    Book Online Now
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#FDF9F8] border-t border-[#F5E1E1] w-full rounded-none">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif italic text-stone-900 mb-4">Lillyan’s Beauty Studio</div>
+<p class="font-serif text-sm leading-relaxed text-stone-600">Elevating natural beauty through precision artistry and mindful skincare in a boutique sanctuary.</p>
+</div>
+<div>
+<h5 class="font-label-sm text-stone-900 mb-6">Navigation</h5>
+<ul class="space-y-4 font-serif text-sm text-stone-500">
+<li><a class="hover:text-stone-900 underline-offset-4 transition-all" href="#">Home</a></li>
+<li><a class="text-[#D4A5A5] font-semibold underline underline-offset-4 transition-all" href="#">Services</a></li>
+<li><a class="hover:text-stone-900 underline-offset-4 transition-all" href="#">Care Guide</a></li>
+<li><a class="hover:text-stone-900 underline-offset-4 transition-all" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-sm text-stone-900 mb-6">Membership</h5>
+<ul class="space-y-4 font-serif text-sm text-stone-500">
+<li><a class="hover:text-stone-900 underline-offset-4 transition-all" href="#">Membership</a></li>
+<li><a class="hover:text-stone-900 underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-sm text-stone-900 mb-6">Contact</h5>
+<p class="font-serif text-sm text-stone-500 mb-2">123 Beauty Lane, Suite 100</p>
+<p class="font-serif text-sm text-stone-500 mb-4">hello@lillyansbeauty.com</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#D4A5A5] cursor-pointer">photo_camera</span>
+<span class="material-symbols-outlined text-[#D4A5A5] cursor-pointer">mail</span>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-8 py-8 border-t border-[#F5E1E1] flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-serif text-sm text-stone-600">© 2024 Lillyan’s Beauty Studio. All Rights Reserved.</p>
+<div class="flex gap-6 text-xs text-stone-400">
+<span>Created with care for your skin.</span>
+</div>
+</div>
+</footer>
+</body></html>
