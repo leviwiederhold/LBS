@@ -11,7 +11,6 @@ export default function Home() {
           <p className="eyebrow"><Sparkles size={16} /> Fayetteville, OH · Licensed Esthetician</p>
           <h1>Beauty Services in Fayetteville, OH Designed to Help You Feel Confident</h1>
           <p>Facials, waxing, permanent makeup, and formal makeup by Lilly — Licensed Esthetician and Certified Permanent/Formal Makeup Artist.</p>
-          <p className="hero-phone"><a href="tel:+15135550124">(513) 555-0124</a></p>
           <div className="button-row">
             <Link className="button primary" to="/services">Book Online</Link>
             <Link className="button secondary" to="/gallery">View Gallery</Link>
@@ -31,7 +30,8 @@ export default function Home() {
       <section className="page-section">
         <div className="section-heading">
           <p className="eyebrow">Services</p>
-          <h2>Choose your glow-up path.</h2>
+          <h2>Elevate Your Natural Beauty</h2>
+          <p>Expertly curated treatments designed to revitalize your skin and enhance your unique features using professional-grade techniques.</p>
         </div>
         <div className="card-grid">
           {services.map((service) => <ServiceCard key={service.id} service={service} />)}

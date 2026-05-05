@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 :root {
-  --cream: #fbf7f4;
-  --cream-deep: #f4eeeb;
-  --surface: #fffdfb;
-  --surface-soft: #f8f1ef;
-  --blush: #f4dede;
-  --blush-strong: #edc8c8;
+  --cream: #fbf9f8;
+  --cream-deep: #f6f3f2;
+  --surface: #ffffff;
+  --surface-soft: #f6f3f2;
+  --blush: #f5e1e1;
+  --blush-strong: #d4a5a5;
   --primary: #695b5b;
   --rose: #7b5455;
   --rose-dark: #5f3c3d;
   --gold: #9a7a20;
-  --espresso: #261b1a;
-  --charcoal: #34302f;
-  --muted: #6f6261;
-  --line: #dfcdca;
-  --shadow: 0 20px 50px rgba(123, 84, 85, 0.13);
-  --shadow-soft: 0 10px 30px rgba(123, 84, 85, 0.08);
-  --radius: 22px;
-  --radius-sm: 14px;
-  --container: 1180px;
+  --espresso: #1c1917;
+  --charcoal: #292524;
+  --muted: #78716c;
+  --line: #f5e1e1;
+  --shadow: 0 18px 45px rgba(105, 91, 91, 0.14);
+  --shadow-soft: 0 4px 20px rgba(212, 165, 165, 0.10);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --container: 1200px;
 }
 
 * { box-sizing: border-box; }
@@ -28,9 +28,7 @@ html { background: var(--cream); }
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at top left, rgba(244, 222, 222, 0.75), transparent 32rem),
-    linear-gradient(180deg, #fffaf8 0%, var(--cream) 42%, #f8f1ef 100%);
+  background: var(--cream);
   color: var(--charcoal);
   font-family: 'Be Vietnam Pro', system-ui, sans-serif;
   letter-spacing: 0;
@@ -57,29 +55,14 @@ h3 { font-size: 1.35rem; }
 p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 
 .site-header {
-  background: rgba(255, 250, 248, 0.95);
-  border-bottom: 1px solid rgba(223, 205, 202, 0.78);
-  box-shadow: 0 8px 30px rgba(123, 84, 85, 0.06);
+  background: #fdf9f8;
+  border-bottom: 1px solid #f5e1e1;
+  box-shadow: var(--shadow-soft);
   position: sticky;
   top: 0;
   z-index: 30;
   backdrop-filter: blur(18px);
 }
-
-.top-ribbon {
-  align-items: center;
-  background: var(--rose-dark);
-  color: #fff8f6;
-  display: flex;
-  font-size: 0.78rem;
-  font-weight: 700;
-  gap: 1rem;
-  justify-content: center;
-  letter-spacing: 0.04em;
-  padding: 0.45rem 1rem;
-}
-
-.top-ribbon a { align-items: center; display: inline-flex; gap: 0.35rem; }
 
 .nav-shell {
   align-items: center;
@@ -88,13 +71,13 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
   justify-content: space-between;
   margin: 0 auto;
   max-width: var(--container);
-  padding: 0.95rem clamp(1rem, 4vw, 2rem);
+  padding: 0.9rem clamp(1rem, 4vw, 2rem);
 }
 
 .brand {
   color: var(--espresso);
   font-family: 'Noto Serif', Georgia, serif;
-  font-size: clamp(1.2rem, 2.3vw, 1.65rem);
+  font-size: clamp(0.98rem, 1.7vw, 1.28rem);
   font-style: italic;
   white-space: nowrap;
 }
@@ -102,7 +85,7 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 .nav-links {
   align-items: center;
   display: flex;
-  gap: 0.85rem;
+  gap: 1.45rem;
 }
 
 .nav-links a {
@@ -110,8 +93,8 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
   border-bottom: 1px solid transparent;
   color: var(--muted);
   display: inline-flex;
-  font-size: 0.86rem;
-  font-weight: 700;
+  font-size: 0.78rem;
+  font-weight: 600;
   gap: 0.35rem;
   padding: 0.2rem 0;
 }
@@ -136,8 +119,10 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 
 .button {
   border-radius: 999px;
-  min-height: 48px;
-  padding: 0.9rem 1.45rem;
+  min-height: 34px;
+  padding: 0.62rem 1.2rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
 }
 
 .button:hover, .pill:hover { transform: translateY(-1px); }
@@ -157,7 +142,7 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.88fr);
   margin: 0 auto;
   max-width: var(--container);
-  padding: clamp(3rem, 8vw, 7rem) clamp(1rem, 4vw, 2rem) clamp(2.5rem, 5vw, 5rem);
+  padding: clamp(4.5rem, 8vw, 7.5rem) clamp(1rem, 4vw, 2rem) clamp(3rem, 5vw, 5rem);
 }
 
 .hero-copy { align-self: center; }
@@ -166,20 +151,11 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 
 .hero-image {
   background: var(--surface);
-  border: 10px solid #fff;
-  border-radius: 32px;
+  border: 8px solid #fff;
+  border-radius: 16px;
   box-shadow: var(--shadow);
   overflow: hidden;
   position: relative;
-}
-
-.hero-image::after {
-  border: 1px solid rgba(255, 255, 255, 0.76);
-  border-radius: 24px;
-  content: '';
-  inset: 14px;
-  pointer-events: none;
-  position: absolute;
 }
 
 .hero-image img { aspect-ratio: 4 / 5; height: 100%; object-fit: cover; }
@@ -205,14 +181,15 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 .centered.button-row, .centered .button-row { justify-content: center; }
 
 .trust-bar {
-  background: linear-gradient(90deg, var(--blush), #fff3ef, var(--blush));
+  background: var(--blush);
   border-bottom: 1px solid var(--line);
   border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
-  padding: 1.15rem;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1.15rem max(1rem, calc((100vw - var(--container)) / 2 + 2rem));
 }
 
 .trust-bar span { align-items: center; color: var(--rose-dark); display: inline-flex; font-weight: 800; gap: 0.45rem; }
@@ -237,8 +214,24 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
   background: var(--primary);
   color: #fff;
   overflow: hidden;
+  padding-bottom: clamp(3rem, 7vw, 6rem);
+  padding-top: clamp(3rem, 7vw, 6rem);
   position: relative;
   text-align: center;
+}
+.page-section.soft-panel,
+.page-section.white-panel,
+.page-section.dark-cta,
+.quote-band {
+  max-width: none;
+}
+.page-section.soft-panel > *,
+.page-section.white-panel > *,
+.page-section.dark-cta > *,
+.quote-band > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--container);
 }
 .dark-cta h2, .dark-cta p { color: #fff; }
 .dark-cta p { opacity: 0.9; }
@@ -306,7 +299,7 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 .bento-card {
   background: var(--surface-soft);
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 12px;
   box-shadow: var(--shadow-soft);
   padding: clamp(1.4rem, 4vw, 2.5rem);
 }
@@ -407,10 +400,8 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 .card-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 .card, .booking-flow, .auth-shell form {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 250, 248, 0.96)),
-    var(--surface);
-  border: 1px solid rgba(223, 205, 202, 0.92);
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   padding: clamp(1.2rem, 3vw, 1.8rem);
@@ -422,13 +413,8 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 .booking-flow::before,
 .auth-shell form::before,
 .admin-card::before {
-  background: linear-gradient(90deg, var(--blush-strong), rgba(154, 122, 32, 0.42), transparent);
-  border-radius: 999px;
   content: '';
-  display: block;
-  height: 3px;
-  margin-bottom: 1.15rem;
-  width: 78px;
+  display: none;
 }
 
 .card-icon {
@@ -445,11 +431,16 @@ p { color: var(--muted); line-height: 1.72; margin-top: 0; }
 }
 
 .service-card {
+  background: #fbf9f8;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 350px;
+  min-height: 310px;
+  padding: 0.7rem;
+  text-align: center;
 }
+
+.service-card > div:nth-child(2) { padding: 1rem; }
 
 .service-meta {
   border-top: 1px solid var(--line);
@@ -658,16 +649,25 @@ textarea { min-height: 118px; resize: vertical; }
   color: var(--espresso);
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1.3fr repeat(3, 1fr);
   margin-top: 3rem;
   padding: clamp(2rem, 5vw, 4rem);
 }
 
 .footer h2 { color: var(--espresso); font-style: italic; }
 .footer p { color: #57534e; max-width: 34rem; }
-.footer-phone { color: var(--rose); display: inline-block; font-weight: 800; margin-top: 0.25rem; }
 .footer-links { display: grid; gap: 0.85rem; }
 .footer-links a { color: #57534e; font-family: 'Noto Serif', Georgia, serif; font-size: 0.92rem; text-decoration: underline; text-underline-offset: 4px; }
+.footer-links h4 {
+  color: var(--espresso);
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+.footer-links span { color: #57534e; font-family: 'Noto Serif', Georgia, serif; font-size: 0.92rem; }
 
 .mobile-sticky-cta { display: none; }
 
