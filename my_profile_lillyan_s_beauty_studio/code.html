@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Client Profile Dashboard | Lillyan’s Beauty Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Be Vietnam Pro:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c9c6c3",
+                        "tertiary-container": "#6a6866",
+                        "surface-variant": "#efdfde",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#673a3b",
+                        "on-secondary-container": "#6b635a",
+                        "primary-fixed-dim": "#f5b7b6",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#382e2e",
+                        "secondary-fixed-dim": "#d0c5ba",
+                        "on-surface": "#221a1a",
+                        "surface-dim": "#e7d6d6",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "primary-fixed": "#ffdad9",
+                        "surface-container-high": "#f5e4e4",
+                        "secondary-container": "#ede0d5",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#ece8e5",
+                        "surface-container-highest": "#efdfde",
+                        "surface-container": "#fbeae9",
+                        "primary": "#724444",
+                        "on-primary-container": "#ffe2e1",
+                        "on-primary-fixed": "#331012",
+                        "error": "#ba1a1a",
+                        "primary-container": "#8d5b5b",
+                        "tertiary": "#51504e",
+                        "secondary-fixed": "#ede0d5",
+                        "surface-container-low": "#fff0f0",
+                        "on-secondary-fixed-variant": "#4d463e",
+                        "inverse-primary": "#f5b7b6",
+                        "outline-variant": "#d6c2c1",
+                        "outline": "#837373",
+                        "background": "#fff8f7",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#201b14",
+                        "on-background": "#221a1a",
+                        "surface": "#fff8f7",
+                        "surface-bright": "#fff8f7",
+                        "on-surface-variant": "#514443",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#655d54",
+                        "surface-tint": "#825151",
+                        "inverse-on-surface": "#feedec",
+                        "on-tertiary-fixed-variant": "#484745",
+                        "tertiary-fixed": "#e5e2df"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "h1": ["Noto Serif"],
+                        "label-caps": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "h2": ["Noto Serif"],
+                        "data-tabular": ["Be Vietnam Pro"],
+                        "display-lg": ["Noto Serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f7;
+            color: #221a1a;
+        }
+    </style>
+</head>
+<body class="font-body-md bg-background">
+<!-- Main App Shell -->
+<div class="flex min-h-screen">
+<!-- Side Navigation - Based on JSON "SideNavBar" -->
+<aside class="h-screen w-64 border-r border-[#F5E1E1] bg-white flex flex-col py-8 px-4 fixed left-0 top-0 z-40">
+<div class="mb-10 px-4">
+<h1 class="text-lg font-bold text-[#7b5455] font-h1">Lillyan's Client Portal</h1>
+<p class="text-[10px] uppercase tracking-widest text-stone-400 font-label-caps mt-1">Clinical Elegance</p>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 text-stone-600 font-serif text-sm hover:bg-stone-50 transition-colors" href="../home_lillyan_s_beauty_studio/code.html">
+<span class="material-symbols-outlined text-sm">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-[#7b5455]/5 text-[#7b5455] font-semibold border-r-4 border-[#7b5455] font-serif text-sm" href="../secure_your_booking_lillyan_s_beauty_studio/code.html">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>Appointments</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-stone-600 font-serif text-sm hover:bg-stone-50 transition-colors" href="../gallery_lillyan_s_beauty_studio/code.html">
+<span class="material-symbols-outlined text-sm">history</span>
+<span>History</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-stone-600 font-serif text-sm hover:bg-stone-50 transition-colors" href="../intake_form_lillyan_s_beauty_studio/code.html">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>Intake Forms</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-stone-600 font-serif text-sm hover:bg-stone-50 transition-colors" href="../contact_lillyan_s_beauty_studio/code.html">
+<span class="material-symbols-outlined text-sm">settings</span>
+<span>Settings</span>
+</a>
+</nav>
+<div class="mt-auto px-4 pt-6 border-t border-[#F5E1E1]">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Profile photo" data-alt="A professional headshot of a woman with a serene expression, styled in a minimalist studio setting with warm, soft lighting. The aesthetic is clean and high-end, featuring a neutral color palette that complements the ivory and rose tones of a luxury beauty clinic's brand identity. The focus is sharp, emphasizing clinical professionalism and personal care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMs1YDa_oy_HwW7jXmaaGyIk3k2hiba2Zdid0K6rVM_9BRz7CzUE2tl6u-1QQFTrCJqLbPlLvYBagc45vzY-zjgdq_nUNDdvoPtCVqY0a2q7qyUaTh0ZRqQAK3dRyCWiNWX-g99FWmUCgIkM10Kb5j5iQO1ezxNBRayfxkkKKZT4KBLuXCavIxy3M4W4X4uYNPbdSRFwp5lP1le9XPl44h4C7c9qWyHo5q_kNMXdwUOxu_t9JqaFxTKMH2hh0xh-YjNaMzM7WgOm8"/>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface">Eleanor Vance</p>
+<p class="text-[10px] text-stone-400 font-label-caps">Premium Client</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-64 p-8 md:p-12">
+<!-- Header Section -->
+<header class="flex justify-between items-end mb-12">
+<div>
+<span class="text-label-caps text-secondary font-label-caps mb-2 block">Welcome Back, Eleanor</span>
+<h2 class="text-display-lg font-h1 text-primary tracking-tight">Your Dashboard</h2>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-3 border border-outline text-primary font-label-caps text-xs uppercase tracking-widest hover:bg-surface-container transition-all">
+                        Support
+                    </button>
+<button class="px-6 py-3 bg-primary-container text-on-primary-container font-label-caps text-xs uppercase tracking-widest hover:opacity-90 transition-all">
+                        Book New Service
+                    </button>
+</div>
+</header>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Upcoming Appointment Card (Large) -->
+<section class="col-span-12 lg:col-span-8 bg-white border border-[#F5E1E1] p-8 relative overflow-hidden">
+<div class="flex justify-between items-start relative z-10">
+<div>
+<span class="inline-block px-3 py-1 bg-surface-container text-primary text-[10px] font-label-caps uppercase tracking-widest mb-6">Confirmed Appointment</span>
+<h3 class="text-h1 font-h1 text-on-surface mb-2">Microneedling Therapy</h3>
+<div class="flex items-center gap-6 text-secondary mb-8">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">event</span>
+<span class="font-data-tabular">October 24, 2024</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">schedule</span>
+<span class="font-data-tabular">10:30 AM — 12:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">person</span>
+<span class="font-data-tabular">with Dr. Lillyan</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<p class="text-label-caps text-stone-400 mb-1">Status</p>
+<p class="text-primary font-bold text-lg">In Preparation</p>
+</div>
+</div>
+<!-- Clinical Notice Box -->
+<div class="bg-surface-container-low border-l-4 border-primary-container p-6 flex gap-6 items-start mb-8">
+<span class="material-symbols-outlined text-primary-container">clinical_notes</span>
+<div>
+<h4 class="font-bold text-on-surface text-sm mb-1">Action Required: Pre-Treatment Intake</h4>
+<p class="text-sm text-on-surface-variant max-w-xl">To ensure the highest safety standards for your upcoming microneedling session, please update your clinical health history form at least 24 hours prior to arrival.</p>
+</div>
+<button class="ml-auto bg-primary text-white px-6 py-3 text-xs font-label-caps uppercase tracking-widest hover:opacity-90 transition-all self-center">
+                            Update Intake Form
+                        </button>
+</div>
+<!-- Visual Accent -->
+<div class="absolute right-[-40px] bottom-[-40px] opacity-[0.03]">
+<span class="material-symbols-outlined text-[300px]">medical_services</span>
+</div>
+</section>
+<!-- Client Health Summary (Small) -->
+<section class="col-span-12 lg:col-span-4 bg-primary-container text-on-primary-container p-8 flex flex-col justify-between">
+<div>
+<h3 class="font-h2 text-h2 mb-4">Clinical Profile</h3>
+<div class="space-y-4">
+<div class="flex justify-between border-b border-primary/20 pb-2">
+<span class="text-xs uppercase font-label-caps opacity-70">Skin Type</span>
+<span class="text-sm font-bold">Combination / Sensitive</span>
+</div>
+<div class="flex justify-between border-b border-primary/20 pb-2">
+<span class="text-xs uppercase font-label-caps opacity-70">Last Analysis</span>
+<span class="text-sm font-bold">Aug 12, 2024</span>
+</div>
+<div class="flex justify-between border-b border-primary/20 pb-2">
+<span class="text-xs uppercase font-label-caps opacity-70">Allergies</span>
+<span class="text-sm font-bold">None Reported</span>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<img alt="Skincare Serums" class="w-full h-32 object-cover opacity-80 mix-blend-overlay" data-alt="A high-end, macro photograph of luxurious skincare serums in minimalist glass bottles. The scene is set on a white marble surface with soft, natural morning light casting gentle shadows. The color palette consists of soft roses, muted creams, and clean whites, embodying the clinical elegance and professional aesthetic of a premium beauty studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmjPp_1C1Be8II4bHshUiyH3_c13KdMbO8Pajl67pQBsb6koTJHTrmU3eNbKyqo9QLQ5f9yNUaazwI3ifOyjmBk-hU0nR2T1GSng2_vK7Hz4h8zXrtVWpWn8puCy3Zc3nMCkXU3QfQ5Y6FHp85ihAOgmGgz4zqIwS1PKg0eXjFW66wmRZDksWpK7cMb0hSgIePSRNRPugvm0UoKDzNuTMtBtH3Fp5k07s8lZ8ng95sIR8rfm58xzejvfh_FCcVLiHY8ZSBcS64dDQ"/>
+</div>
+</section>
+<!-- Previous Visits History -->
+<section class="col-span-12 bg-white border border-[#F5E1E1]">
+<div class="p-8 border-b border-[#F5E1E1] flex justify-between items-center">
+<h3 class="text-h2 font-h2 text-on-surface">Previous Visits</h3>
+<button class="text-primary font-label-caps text-xs uppercase tracking-widest border-b border-primary">View Full Records</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-lowest">
+<th class="px-8 py-4 font-label-caps text-[10px] uppercase tracking-widest text-stone-500">Date</th>
+<th class="px-8 py-4 font-label-caps text-[10px] uppercase tracking-widest text-stone-500">Service</th>
+<th class="px-8 py-4 font-label-caps text-[10px] uppercase tracking-widest text-stone-500">Practitioner</th>
+<th class="px-8 py-4 font-label-caps text-[10px] uppercase tracking-widest text-stone-500">Status</th>
+<th class="px-8 py-4 font-label-caps text-[10px] uppercase tracking-widest text-stone-500 text-right">Documents</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#F5E1E1]">
+<tr>
+<td class="px-8 py-6 font-data-tabular text-sm">Aug 12, 2024</td>
+<td class="px-8 py-6">
+<p class="font-bold text-on-surface">Advanced Chemical Peel</p>
+<p class="text-xs text-stone-400">Level 2 Glycolic Treatment</p>
+</td>
+<td class="px-8 py-6 text-sm">Dr. Lillyan</td>
+<td class="px-8 py-6">
+<span class="px-3 py-1 bg-green-50 text-green-700 text-[10px] font-label-caps uppercase rounded-full">Completed</span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="text-primary-container material-symbols-outlined">receipt_long</button>
+<button class="text-primary-container material-symbols-outlined ml-4">visibility</button>
+</td>
+</tr>
+<tr>
+<td class="px-8 py-6 font-data-tabular text-sm">July 05, 2024</td>
+<td class="px-8 py-6">
+<p class="font-bold text-on-surface">Initial Consultation</p>
+<p class="text-xs text-stone-400">Skin Analysis &amp; Mapping</p>
+</td>
+<td class="px-8 py-6 text-sm">Dr. Lillyan</td>
+<td class="px-8 py-6">
+<span class="px-3 py-1 bg-green-50 text-green-700 text-[10px] font-label-caps uppercase rounded-full">Completed</span>
+</td>
+<td class="px-8 py-6 text-right">
+<button class="text-primary-container material-symbols-outlined">receipt_long</button>
+<button class="text-primary-container material-symbols-outlined ml-4">visibility</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Small Info Cards -->
+<section class="col-span-12 md:col-span-4 bg-surface-container p-6 flex items-center gap-6">
+<div class="w-12 h-12 bg-white flex items-center justify-center border border-[#F5E1E1]">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<div>
+<p class="text-[10px] font-label-caps text-stone-500 uppercase tracking-widest">Loyalty Status</p>
+<p class="text-lg font-h2 text-on-surface">Gold Tier Member</p>
+</div>
+</section>
+<section class="col-span-12 md:col-span-4 bg-surface-container p-6 flex items-center gap-6">
+<div class="w-12 h-12 bg-white flex items-center justify-center border border-[#F5E1E1]">
+<span class="material-symbols-outlined text-primary">card_giftcard</span>
+</div>
+<div>
+<p class="text-[10px] font-label-caps text-stone-500 uppercase tracking-widest">Available Credit</p>
+<p class="text-lg font-h2 text-on-surface">$120.00</p>
+</div>
+</section>
+<section class="col-span-12 md:col-span-4 bg-surface-container p-6 flex items-center gap-6">
+<div class="w-12 h-12 bg-white flex items-center justify-center border border-[#F5E1E1]">
+<span class="material-symbols-outlined text-primary">medication</span>
+</div>
+<div>
+<p class="text-[10px] font-label-caps text-stone-500 uppercase tracking-widest">Prescribed Regimen</p>
+<p class="text-lg font-h2 text-on-surface">4 Active Serums</p>
+</div>
+</section>
+</div>
+</main>
+</div>
+<!-- Footer - Based on JSON "Footer" -->
+<footer class="ml-64 border-t border-[#F5E1E1] bg-[#FDF9F8]">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-6 md:px-12 max-w-7xl mx-auto gap-8">
+<div class="text-sm font-bold text-stone-800 font-serif">Lillyan’s Beauty Studio</div>
+<div class="flex gap-8">
+<a class="font-serif text-xs uppercase tracking-widest text-stone-500 hover:text-[#7b5455] underline transition-all" href="../contact_lillyan_s_beauty_studio/code.html">Privacy Policy</a>
+<a class="font-serif text-xs uppercase tracking-widest text-stone-500 hover:text-[#7b5455] underline transition-all" href="../contact_lillyan_s_beauty_studio/code.html">Terms of Service</a>
+<a class="font-serif text-xs uppercase tracking-widest text-stone-500 hover:text-[#7b5455] underline transition-all" href="../contact_lillyan_s_beauty_studio/code.html">Contact Us</a>
+<a class="font-serif text-xs uppercase tracking-widest text-stone-500 hover:text-[#7b5455] underline transition-all" href="../pre_post_care_lillyan_s_beauty_studio/code.html">Careers</a>
+</div>
+<p class="font-serif text-xs uppercase tracking-widest text-stone-400">© 2024 Lillyan’s Beauty Studio. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

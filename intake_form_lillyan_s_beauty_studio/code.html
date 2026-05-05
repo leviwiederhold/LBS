@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&amp;family=Be Vietnam Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#c9c6c3",
+                    "tertiary-container": "#6a6866",
+                    "surface-variant": "#efdfde",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#673a3b",
+                    "on-secondary-container": "#6b635a",
+                    "primary-fixed-dim": "#f5b7b6",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#382e2e",
+                    "secondary-fixed-dim": "#d0c5ba",
+                    "on-surface": "#221a1a",
+                    "surface-dim": "#e7d6d6",
+                    "on-tertiary-fixed": "#1c1b1a",
+                    "primary-fixed": "#ffdad9",
+                    "surface-container-high": "#f5e4e4",
+                    "secondary-container": "#ede0d5",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#ece8e5",
+                    "surface-container-highest": "#efdfde",
+                    "surface-container": "#fbeae9",
+                    "primary": "#724444",
+                    "on-primary-container": "#ffe2e1",
+                    "on-primary-fixed": "#331012",
+                    "error": "#ba1a1a",
+                    "primary-container": "#8d5b5b",
+                    "tertiary": "#51504e",
+                    "secondary-fixed": "#ede0d5",
+                    "surface-container-low": "#fff0f0",
+                    "on-secondary-fixed-variant": "#4d463e",
+                    "inverse-primary": "#f5b7b6",
+                    "outline-variant": "#d6c2c1",
+                    "outline": "#837373",
+                    "background": "#fff8f7",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#201b14",
+                    "on-background": "#221a1a",
+                    "surface": "#fff8f7",
+                    "surface-bright": "#fff8f7",
+                    "on-surface-variant": "#514443",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#655d54",
+                    "surface-tint": "#825151",
+                    "inverse-on-surface": "#feedec",
+                    "on-tertiary-fixed-variant": "#484745",
+                    "tertiary-fixed": "#e5e2df"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "h1": ["Noto Serif"],
+                    "label-caps": ["Be Vietnam Pro"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "h2": ["Noto Serif"],
+                    "data-tabular": ["Be Vietnam Pro"],
+                    "display-lg": ["Noto Serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .clinical-input:focus {
+            outline: none;
+            border-color: #724444;
+            ring: 1px;
+            ring-color: #724444;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<nav class="fixed top-0 w-full z-50 bg-[#FDF9F8] dark:bg-stone-950 border-b border-[#F5E1E1] dark:border-stone-800">
+<div class="flex justify-between items-center h-16 px-6 md:px-12 max-w-7xl mx-auto">
+<span class="text-xl font-semibold text-[#7b5455] dark:text-[#FDF9F8] font-serif tracking-tight">Lillyan’s Beauty Studio</span>
+<div class="hidden md:flex space-x-8">
+<a class="text-stone-500 font-serif tracking-tight hover:text-[#7b5455] transition-colors" href="../home_lillyan_s_beauty_studio/code.html">Home</a>
+<a class="text-stone-500 font-serif tracking-tight hover:text-[#7b5455] transition-colors" href="../gallery_lillyan_s_beauty_studio/code.html">Gallery</a>
+<a class="text-stone-500 font-serif tracking-tight hover:text-[#7b5455] transition-colors" href="../services_booking_lillyan_s_beauty_studio/code.html">Services</a>
+<a class="text-stone-500 font-serif tracking-tight hover:text-[#7b5455] transition-colors" href="../pre_post_care_lillyan_s_beauty_studio/code.html">Care</a>
+<a class="text-[#7b5455] dark:text-[#FDF9F8] border-b-2 border-[#7b5455] pb-1 font-serif tracking-tight" href="../my_profile_lillyan_s_beauty_studio/code.html">My Profile</a>
+</div>
+<a class="bg-primary-container text-on-primary-container px-6 py-2 font-label-caps text-label-caps uppercase tracking-widest hover:opacity-90 transition-all" href="../secure_your_booking_lillyan_s_beauty_studio/code.html">Book Online</a>
+</div>
+</nav>
+<main class="flex-grow pt-24 pb-12 px-6">
+<div class="max-w-[640px] mx-auto">
+<header class="mb-12 text-center">
+<div class="flex justify-center mb-6">
+<div class="flex items-center space-x-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-12 h-px bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+<div class="w-12 h-px bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+</div>
+<h1 class="font-h1 text-h1 text-primary mb-2">Signature Radiance Facial</h1>
+<p class="text-secondary font-body-md">Pre-treatment Clinical Assessment</p>
+</header>
+<div class="bg-surface-container-low border border-outline-variant p-6 mb-8 flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary" data-icon="history">history</span>
+<div>
+<p class="font-body-md font-medium text-primary">Returning Client?</p>
+<p class="text-xs text-secondary font-label-caps">LAST VISIT: OCTOBER 12, 2023</p>
+</div>
+</div>
+<div class="flex space-x-3">
+<button class="px-4 py-2 text-xs font-label-caps border border-primary text-primary hover:bg-primary-container hover:text-white transition-all uppercase tracking-widest">Reuse info</button>
+<button class="px-4 py-2 text-xs font-label-caps bg-transparent text-secondary border border-outline-variant hover:bg-surface-variant transition-all uppercase tracking-widest">Start fresh</button>
+</div>
+</div>
+<form class="space-y-10">
+<section>
+<div class="flex items-center space-x-3 mb-6">
+<span class="text-xs font-label-caps text-secondary tracking-[0.2em] uppercase">Section 01</span>
+<div class="flex-grow h-px bg-outline-variant"></div>
+</div>
+<div class="space-y-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 uppercase tracking-widest">Primary Skin Concerns</label>
+<div class="grid grid-cols-2 gap-3">
+<label class="flex items-center p-3 border border-outline-variant cursor-pointer hover:bg-surface-container transition-colors">
+<input class="rounded-none border-outline text-primary focus:ring-primary mr-3" type="checkbox"/>
+<span class="text-sm font-body-md">Fine Lines &amp; Wrinkles</span>
+</label>
+<label class="flex items-center p-3 border border-outline-variant cursor-pointer hover:bg-surface-container transition-colors">
+<input class="rounded-none border-outline text-primary focus:ring-primary mr-3" type="checkbox"/>
+<span class="text-sm font-body-md">Hyperpigmentation</span>
+</label>
+<label class="flex items-center p-3 border border-outline-variant cursor-pointer hover:bg-surface-container transition-colors">
+<input class="rounded-none border-outline text-primary focus:ring-primary mr-3" type="checkbox"/>
+<span class="text-sm font-body-md">Active Acne</span>
+</label>
+<label class="flex items-center p-3 border border-outline-variant cursor-pointer hover:bg-surface-container transition-colors">
+<input class="rounded-none border-outline text-primary focus:ring-primary mr-3" type="checkbox"/>
+<span class="text-sm font-body-md">Sensitivity/Redness</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 uppercase tracking-widest">Allergies &amp; Sensitivities</label>
+<textarea class="clinical-input w-full border border-outline-variant bg-white p-4 font-body-md placeholder:text-outline-variant text-on-surface" placeholder="Please list any known allergies to skincare ingredients, nuts, or latex..." rows="3"></textarea>
+</div>
+</div>
+</section>
+<section>
+<div class="flex items-center space-x-3 mb-6">
+<span class="text-xs font-label-caps text-secondary tracking-[0.2em] uppercase">Section 02</span>
+<div class="flex-grow h-px bg-outline-variant"></div>
+</div>
+<div class="space-y-6">
+<div class="aspect-[21/9] w-full overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale-[20%] contrast-[1.05]" data-alt="A clean, medical-grade aesthetic studio environment featuring a minimalist glass shelf with high-end clinical skincare products in amber and frosted glass bottles. The lighting is soft, diffused, and bright, creating a serene and professional atmosphere. The color palette consists of soft ivory, muted rose, and warm beige tones, reflecting a luxurious clinical elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh_ETSYxUhCbqr2YTIAgc_akwLuDgc_GRsxhmxqvsaX0ZVpVPbrsQpywCcekx8Z8DNcKTBNZkTOlCW9Zu71or9sJw-MNj9_3er9v2c9N96krJHPrBPen_2SjP7VEmPHVNorqaDx9L5Tx0YsMUlNO6Ap1dhDExShJ8nmszd-p-R2-2j41EpcnC_E4jIvQHAKRvgj_Ydup_974FdvOWL2T8H04kPyETQvWO0jvTCtnZfL3SIPHnrf5w12OA3QdRfe6FJfovgCatSc9A"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 uppercase tracking-widest">Current Product Regimen</label>
+<div class="space-y-4">
+<div class="flex items-center border-b border-outline-variant pb-2">
+<span class="w-24 text-xs font-label-caps text-secondary uppercase tracking-widest">Cleanser</span>
+<input class="flex-grow border-none focus:ring-0 font-body-md bg-transparent" placeholder="Brand/Product name" type="text"/>
+</div>
+<div class="flex items-center border-b border-outline-variant pb-2">
+<span class="w-24 text-xs font-label-caps text-secondary uppercase tracking-widest">Actives</span>
+<input class="flex-grow border-none focus:ring-0 font-body-md bg-transparent" placeholder="Retinol, Vitamin C, Acids, etc." type="text"/>
+</div>
+<div class="flex items-center border-b border-outline-variant pb-2">
+<span class="w-24 text-xs font-label-caps text-secondary uppercase tracking-widest">SPF</span>
+<input class="flex-grow border-none focus:ring-0 font-body-md bg-transparent" placeholder="Daily Sun Protection" type="text"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 uppercase tracking-widest">Health History</label>
+<p class="text-xs text-secondary mb-4 italic">Are you currently pregnant, nursing, or taking medications that cause photosensitivity (e.g., Accutane)?</p>
+<textarea class="clinical-input w-full border border-outline-variant bg-white p-4 font-body-md placeholder:text-outline-variant text-on-surface" placeholder="Provide any relevant medical history..." rows="3"></textarea>
+</div>
+</div>
+</section>
+<div class="bg-surface-container p-6 border-l-4 border-primary">
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-primary mt-0.5" data-icon="lock" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lock</span>
+<div>
+<p class="font-body-md font-medium text-primary mb-1">Clinical Privacy Protocol</p>
+<p class="text-sm text-on-surface-variant">Your information is encrypted and securely saved for future visits to ensure treatment consistency and safety. Access is limited to your aesthetician.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-outline-variant">
+<button class="text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="chevron_left">chevron_left</span>
+                        Back to services
+                    </button>
+<button class="w-full md:w-auto bg-primary text-white px-10 py-4 font-label-caps text-label-caps uppercase tracking-[0.2em] hover:bg-primary-container transition-all shadow-sm" type="submit">
+                        Confirm &amp; Continue
+                    </button>
+</div>
+</form>
+</div>
+</main>
+<footer class="bg-[#FDF9F8] dark:bg-stone-950 border-t border-[#F5E1E1] dark:border-stone-800">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-6 md:px-12 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-sm font-bold text-stone-800 dark:text-stone-200 font-serif uppercase tracking-widest">Lillyan’s Beauty Studio</span>
+<p class="text-stone-500 dark:text-stone-400 text-xs font-serif uppercase tracking-widest">© 2024 Lillyan’s Beauty Studio. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-stone-500 dark:text-stone-400 font-serif text-xs uppercase tracking-widest hover:text-[#7b5455] underline transition-all" href="../contact_lillyan_s_beauty_studio/code.html">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-400 font-serif text-xs uppercase tracking-widest hover:text-[#7b5455] underline transition-all" href="../contact_lillyan_s_beauty_studio/code.html">Terms of Service</a>
+<a class="text-stone-500 dark:text-stone-400 font-serif text-xs uppercase tracking-widest hover:text-[#7b5455] underline transition-all" href="../contact_lillyan_s_beauty_studio/code.html">Contact Us</a>
+<a class="text-stone-500 dark:text-stone-400 font-serif text-xs uppercase tracking-widest hover:text-[#7b5455] underline transition-all" href="../pre_post_care_lillyan_s_beauty_studio/code.html">Careers</a>
+</div>
+</div>
+</footer>
+</body></html>
