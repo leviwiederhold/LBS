@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Membership() {
   return (
-    <main className="page-shell">
+    <main className="page-shell soft-panel">
       <div className="section-heading">
         <p className="eyebrow">Membership</p>
         <h1>For clients who keep beauty care on the calendar.</h1>

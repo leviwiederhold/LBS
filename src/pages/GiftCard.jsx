@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function GiftCard() {
   return (
-    <main className="page-shell two-column">
+    <main className="page-shell two-column soft-panel">
       <section>
         <p className="eyebrow">Gift cards & deposits</p>
         <h1>Give care now, book with less friction later.</h1>
